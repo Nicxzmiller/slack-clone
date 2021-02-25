@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from "./components/Header";
 import './App.css';
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
                 <Switch>
                     <Route path="/" exact>
                         <Header/>
+                        <Sidebar />
                     </Route>
                 </Switch>
             </>
