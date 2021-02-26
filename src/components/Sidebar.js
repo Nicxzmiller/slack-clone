@@ -1,6 +1,18 @@
 import React from "react";
 import styled from "styled-components"
-import {Create, FiberManualRecord, InsertComment, Inbox, Drafts, Bookmark, PeopleAlt, Apps, FileCopy, ExpandLess } from "@material-ui/icons";
+import {
+    Create,
+    FiberManualRecord,
+    InsertComment,
+    Inbox,
+    Drafts,
+    Bookmark,
+    PeopleAlt,
+    Apps,
+    FileCopy,
+    ExpandLess,
+    ExpandMore, Add
+} from "@material-ui/icons";
 import SidebarOption from "./SidebarOption";
 
 function Sidebar(){
@@ -25,6 +37,10 @@ function Sidebar(){
             <SidebarOption Icon={Apps} title="Apps"/>
             <SidebarOption Icon={FileCopy} title="File browser"/>
             <SidebarOption Icon={ExpandLess} title="Show less"/>
+            <hr/>
+            <SidebarOption Icon={ExpandMore} title="Channels"/>
+            <hr/>
+            <SidebarOption Icon={Add} addChannelOption title="Add Channel"/>
 
         </SidebarContainer>
     )

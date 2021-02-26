@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function SidebarOption({Icon, title}){
+function SidebarOption({Icon, title, addChannelOption}){
     return (
         <SidebarOptionContainer>
             {Icon && <Icon fontSize="small" style={{padding:10}} />}
@@ -28,6 +28,14 @@ const SidebarOptionContainer = styled.div`
   :hover{
     opacity: 0.9;
     background-color: #340E36;
+  }
+  
+  > h3{
+    font-weight: 500;
+  }
+  
+  > h3 > span{
+    padding: 15px;
   }
 `
 
