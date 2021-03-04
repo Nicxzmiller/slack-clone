@@ -41,6 +41,7 @@ const ChatContainer = styled.div`
   flex-grow: 1;
   overflow-y: scroll;
   margin-top: 60px;
+  
 `
 
 const Header = styled.div`
